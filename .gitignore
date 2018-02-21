@@ -1,0 +1,39 @@
+# 使用两个星号（*) 表示匹配任意中间目录
+
+!.gitignore
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+**/dist/
+**/build/
+**/__pycache__/
+
+# pyvenv
+**/venv*/
+
+
+*.tar
+*.tar.gz
+
+*.sqlite
+**/migrations/
+
+.DS_Store
+**/node_modules/
+**/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+

@@ -1,0 +1,43 @@
+User Login.
+---
+tags:
+  - User
+consumes:
+    - multipart/form-data
+parameters:
+    - in: formData
+      name: username
+      type: string
+      required: true
+      default: admin
+      description: User username
+    - in: formData
+      name: password
+      type: string
+      required: true
+      default: 123456
+      description: User password
+responses:
+  200:
+    description: User login successful!
+    schema:
+      type: json
+      properties:
+        status:
+          type: integer
+          description: is success?
+        message:
+          type: string
+          description: the description of statue.
+        request:
+          type: string
+          description: the request url.
+        data:
+          description: data
+          schema:
+            properties:
+              token:
+                type: string
+                description: the token
+                
+        

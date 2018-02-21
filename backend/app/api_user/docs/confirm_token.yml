@@ -1,0 +1,15 @@
+Confirm Token.
+---
+tags:
+  - User
+consumes:
+    - multipart/form-data
+parameters:
+    - in: formData
+      name: token
+      type: string
+      required: true
+      description: The token.
+responses:
+  200:
+    description: Token Confirms successful!

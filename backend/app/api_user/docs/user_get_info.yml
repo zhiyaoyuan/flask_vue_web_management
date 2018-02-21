@@ -1,0 +1,14 @@
+Get user informations.
+---
+tags:
+  - User
+parameters:
+    - in: query
+      name: token
+      type: string
+      require: true
+      description: the token.
+responses:
+  200:
+    description: Get user informations successful!
+    

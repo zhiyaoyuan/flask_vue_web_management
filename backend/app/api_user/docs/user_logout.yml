@@ -1,0 +1,7 @@
+User Logout.
+---
+tags:
+  - User
+responses:
+  200:
+    description: User Logout successful!
